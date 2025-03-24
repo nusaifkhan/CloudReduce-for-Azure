@@ -1,0 +1,27 @@
+version: "3.8"
+# Specify the version of Docker Compose being used.
+
+services:
+  azure-cleanup:
+    # Define the "azure-cleanup" service.
+
+    build:
+      context: .
+      # Specify the build context, which is the current directory (".").
+      # This will use the Dockerfile in the same directory to build the image.
+
+    env_file:
+      - .env
+      # Load environment variables from the .env file.
+
+    volumes:
+      - ./logs:/app/logs
+      # Mount the "logs" directory on the host machine to "/app/logs" in the container.
+      # This allows the container to write logs to a shared location that persists
+      # even after the container is stopped.
+
+    stdin_open: true
+    # Keep the container's standard input open, useful for interactive debugging.
+
+    tty: true
+    # Allocate a pseudo-TTY (terminal) for compatibility with some tools.
