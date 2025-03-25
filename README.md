@@ -24,15 +24,20 @@ A tech company extensively utilizes Azure cloud infrastructure, granting develop
 ### **Problem**
 
 Unattended snapshots and disks result in significant Azure storage costs, draining resources without contributing to operational value. Without systematic tracking, these idle resources can quickly spiral out of control, increasing unnecessary expenses.
+---
 
-### **Solution**
-
+## **Solution**
 This automated Python script leverages Azure SDKs to:
+   Identify all snapshots across the subscription.
+   Check whether snapshots are linked to active Managed Disks or virtual machines.
+   Delete snapshots and disks that are unattached or unused.
+   Save the entire process in a log file for tracking purposes. 
+     The log file includes:
+          Details of all identified snapshots.
+          Their statuses (attached/unattached).
+          Actions performed (deleted or skipped).
 
-1. Identify all snapshots across the subscription.
-2. Check whether snapshots are linked to active Managed Disks or virtual machines.
-3. Delete snapshots and disks that are unattached or unused.
-
+---
 ### **Outcome**
 
 - **Cost Savings:** Reduces Azure storage costs, saving potentially thousands annually.
