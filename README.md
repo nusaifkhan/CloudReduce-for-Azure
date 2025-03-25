@@ -99,7 +99,7 @@ Replace `your_client_id`, `your_tenant_id`, `your_client_secret`, and `your_subs
 The repository includes:
 
 - A `Dockerfile` to build the container image.
-- A `docker-compose.yml` file to configure and run the container.
+- A `Docker-Compose.yml` file to configure and run the container.
 
 ### **Step 2: Load `.env` in Docker Compose**
 
