@@ -15,6 +15,15 @@ Efficient management of cloud resources is crucial to optimizing costs and enhan
 
 ---
 
+
+
+![Project Overview](CloudReduce-for-Azure.png)
+
+
+
+
+
+---
 ## **Use Case**
 
 ### **Scenario**
