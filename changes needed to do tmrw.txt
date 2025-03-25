@@ -1,0 +1,3 @@
+i want to change logs file to a directory using mkdir logs or create a folder called logs and delete the logs file.
+
+  
